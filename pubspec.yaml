@@ -1,0 +1,40 @@
+name: grand_piano
+description: "Grand Piano — an elegant 88-key virtual keyboard with recording and playback."
+publish_to: 'none'
+
+version: 1.0.0+3
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  just_audio: ^0.9.42
+  google_fonts: ^6.2.1
+
+  # Added for recording export / save-to-device feature:
+  path_provider: ^2.1.5
+  share_plus: ^10.1.4
+  # Maintained fork of the original (discontinued) ffmpeg_kit_flutter,
+  # used to mix recorded notes into a single clean audio file offline.
+  ffmpeg_kit_flutter_new_min_gpl: ^2.6.2
+
+  # Premium icon set — replaces Material icons across the UI for a
+  # more refined, consistent visual language.
+  phosphor_flutter: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.1
+  flutter_launcher_icons:
+
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/music/
